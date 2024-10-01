@@ -1,0 +1,127 @@
+img{
+    max-width: 300px;
+    max-height: 450px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.pic{
+    max-width: 300px;
+    max-height: 450px;
+    background-color: hsl(30, 38%, 92%);
+}
+.pic2{
+    display:none;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.main{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.text{
+    max-height: 410px;
+    max-width: 260px;
+    padding: 0px 30px;
+}
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-top: 0px;
+}
+h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding-right:30px;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.price{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    gap: 30px;
+}
+.price h2{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    margin-top: 10px;
+}
+.price h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 14px;
+}
+a{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    max-width: 260px;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+}
+button{
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    gap: 8px;
+}
+@media (max-width: 376px) {
+    .main{
+        flex-direction: column;
+    }
+    .pic{
+        display: none;
+    }
+    .pic2{
+        display: flex;
+        background-color: hsl(30, 38%, 92%);;
+
+    }
+    img{
+        max-width: 320px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 14px;
+    }
+    .text h3{
+        margin-top: 20px;
+    }
+    .text{
+        margin-bottom:20px;
+        border-bottom-left-radius: 14px;
+    }
+    .main{
+        border-bottom-left-radius: 14px;
+    }
+  }
